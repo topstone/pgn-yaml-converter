@@ -1,0 +1,8 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+
+require "pgn_yaml_converter"
+
+conv = PgnYamlConverter::Converter.new
+
+conv.yaml2pgn(ARGV[0])
